@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let temp = [0,-3,3,56,8,7,33,34,16,18,20,30];
+        let temp2 = 0;
+        document.write("values in inputted<br>")
+        document.write(temp)
+        //max
+        max=0
+        for (let i=0 ; i <temp.length ; i++){
+            if (temp[i]>temp2){
+               temp2 = temp[i]
+            }
+        }
+        document.write("<br><br>the maximum value is :",temp2,)
+        //min
+        min=0
+        for (let i=0 ; i <temp.length ; i++){
+            if (temp[i]<temp2){
+               temp2 = temp[i]
+            }
+        }
+        document.write("<br><br>the minimum value is :",temp2 )
+        //avg
+        let average = 0;
+        for(i=0; i<temp.length;i++){
+            average+=temp[i];
+        }
+        let average1 = average/temp.length; 
+           
+
+            document.write("<br><br>average number is :" + average1)
+        //trashhold
+        document.write("<br><br>number above 26 is :")
+        for(i=0;i<temp.length;i++){
+            if(temp[i]<26){
+              //  temp2=temp[i]
+                document.write(" "+temp[i])
+            }
+        }
+        document.write("<br><br>number below 26 is :")
+        for(i=0;i<temp.length;i++){
+            if(temp[i]>26){
+              //  temp2=temp[i]
+                document.write(" "+temp[i])
+            }
+        }
+    </script>
+</body>
+</html>
